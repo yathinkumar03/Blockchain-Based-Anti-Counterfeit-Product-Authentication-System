@@ -1,0 +1,29 @@
+{
+  "name": "blockchain-based-anti-counterfeit-product-authentication-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Decentralized anti-counterfeit product authentication platform using Solidity, Hardhat, React, and Ethers.",
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:hardhat": "hardhat run scripts/deploy.js",
+    "frontend": "npm --prefix frontend run dev",
+    "frontend:install": "npm --prefix frontend install"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.16.0",
+    "qrcode.react": "^4.2.0",
+    "react-router-dom": "^7.14.0",
+    "react-toastify": "^11.0.5"
+  }
+}
